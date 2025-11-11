@@ -4,46 +4,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>모두를 위한 코딩 강의 - 테킷 | 멋쟁이 사자처럼 스쿨</title>
-    
-    <!-- Open Graph -->
-    <meta property="og:url" content="https://psy0821-k.github.io/lionVodFe/">
-    <meta property="og:title" content="모두를 위한 코딩 강의 - 테킷">
-    <meta property="og:description" content="프론트엔드, 백엔드, 블록체인까지! 멋쟁이 사자처럼 스쿨에서 시작하세요.">
+    <title>layout</title>
+    <meta property="og:title" content="멋사 fe vod 연습">
+    <meta property="og:description" content="멋사 fe vod 연습 레이아웃">
     <meta property="og:image" content="./thumbnail.jpg">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <div>
-        <!-- 표제 -->
-        <h1>모두를 위한 코딩 강의 - 테킷</h1>
-        <!-- 부제 a-->
-        <h2>멋쟁이 사자처럼 스쿨</h2>
-        <p>멋쟁이 사자처럼 스쿨이<br>여러분을 환영합니다.</p>
+    <nav>
+        <div class="container">
+            <h1 class="nav-logo"><a href="index.html">Lay Out</a></h1>
+            <div class="nav-menu">
+                <ul class="nav-btn">
+                    <li><a href="./index.html">홈<i class="fa-solid fa-house"></i></a></li>
+                    <li><a href="">소개</a></li>
+                    <li><a href="https://likelion.net/" target="_blank">Tech it</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-    </div>
+    <header class="hd">
+        <div class="container">
+            <h2 class="hd-title">POSSIBILITY TO REALITY!</h2>
+            <p class="hd-content">감사합니다:)</p>
+        </div>
+    </header>
 
-    <div>
-        <ol>
-            <!-- target blank는 새창에서 열림 -->
-            <li>
-                <a href="#" target="_blank">
-                    프론트엔드
-                </a>
-            </li>
-            <li><a href="#">백엔드</a></li>
-            <li><a href="#">블록체인</a></li>
-        </ol>
-    </div>
+    <section class="sec">
+        <div class="container">
+            <article class="arti">
+                <div class="card-image">
+                    <img src="./artc1.jpg" alt="image1">
+                </div>
+                <p>이미지1</p>
+            </article>
+            <article class="arti">
+                <div class="card-image">
+                    <img src="./artc2.jpg" alt="image2">
+                </div>
+                <p>이미지2</p>
+            </article>
+            <article class="arti">
+                <div class="card-image">
+                    <img src="./artc3.jpg" alt="image3">
+                </div>
+                <p>이미지3</p>
+            </article>
+        </div>
+    </section>
 
-    <div>
-        <img src="./thumbnail.jpg" alt="a">
-    </div>
+    <footer class="ft">
+        <div class="container">
+            <p> &copy; 2025 LIKELION. ALL right reserved.</p>
+        </div>
+    </footer>
+
+        <label for="Email">
+        <span class="text-sm font-medium text-gray-700">
+            <font dir="auto" style="vertical-align: inherit;">
+                <font dir="auto" style="vertical-align: inherit;">이메일</font>
+            </font>
+        </span>
+
+        <input type="email" id="Email" class="mt-0.5 w-full rounded border-gray-300 shadow-sm sm:text-sm">
+    </label>
+    <script src="./ex01.js"></script>
 
 </body>
 

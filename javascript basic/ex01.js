@@ -1,0 +1,1 @@
+document.write('<p>javascript 기초 시작</p>')
